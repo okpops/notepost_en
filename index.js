@@ -41,6 +41,77 @@ renderNote()
 showWelcome()
 
 /////////////////////////////////////////////////////////////
+//welcomeToNoteous --> ao acessar 1ª vez ou nova versão
+
+function welcomeToNoteous(context) {
+  setTheme('setThemeLight')
+  //context --> primeiro acesso ou nova versão
+  if (context == 'first-access') {
+    //Configuração da tela de Boas vindas (noteous 1.0)
+
+    //Panel e Section
+    //greetingPanel --> sectionMain + sectionTitle
+    let greetingPanel = document.createElement('div')
+    greetingPanel.classList.add('greeting-panel')
+
+    let greetingSectionMain = document.createElement('div')
+    greetingSectionMain.classList.add('greeting-section-main')
+
+    let greetingSectionTitle = document.createElement('div')
+    greetingSectionTitle.classList.add('greeting-section-title')
+
+    //Next Button
+    btnNext = document.createElement('button')
+    btnNext.classList.add('write-buttons')
+    btnNext.appendChild(document.createTextNode('Atualizar noteous'))
+    btnNext.addEventListener('click', () => {
+      document.location.reload()
+    })
+
+    //Appends
+    greetingSectionMain.append(
+      greetingTitle1,
+      greetingTitle1b,
+      greetingSectionTitle,
+      greetingDescriptionTitle,
+      greetingDescriptionUl,
+      btnNext
+    )
+    greetingPanel.append(greetingSectionMain)
+    body.append(greetingPanel)
+  } else if (context == 'new-version') {
+    //Panel e Section
+    let greetingPanel = document.createElement('div')
+    greetingPanel.classList.add('greeting-panel')
+
+    let greetingSectionMain = document.createElement('div')
+    greetingSectionMain.classList.add('greeting-section-main')
+
+    let greetingSectionTitle = document.createElement('div')
+    greetingSectionTitle.classList.add('greeting-section-title')
+
+      //Next Button
+    btnNext = document.createElement('button')
+    btnNext.classList.add('write-buttons')
+    btnNext.appendChild(document.createTextNode('Atualizar noteous'))
+    btnNext.addEventListener('click', () => {
+      document.location.reload()
+    })
+
+    //Appends
+    greetingSectionMain.append(
+      greetingTitle1,
+      greetingTitle1b,
+      greetingSectionTitle,
+      greetingDescriptionTitle,
+      greetingDescriptionUl,
+      btnNext
+    )
+    greetingPanel.append(greetingSectionMain)
+    body.innerHTML = ''
+    body.append(greetingPanel)
+  }
+}
 
 // CONFIGURAÇÕES DE TEMA ////////////////////////////////////
 function setTheme(context) {

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--MERRIWEATHER-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--DM-SERIF-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!--MATERIAL ICONS-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>notepost[Memo]</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+  </head>
+  <body id="index">
+    <header>
+      <a href="index.html"><h1 id="logo">notepost[Memo]</h1></a>
+      <nav>
+        <ul>
+          <li>
+            <div id="theme-container">
+              <p>Dark/Light</p>
+              <div id="theme-color"></div>
+            </div>
+          </li>
+          <li>
+            <a id="nav-update" href="about.html">Learn More</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="section-write">
+        <div id="welcome-panel">
+          <p id="welcome-text-container"></p>
+        </div>
+        <div id="write-panel">
+          <label id="write-label">Memo Input</label>
+          <span id="write-options"></span>
+          <textarea
+            id="write-input"
+            type="text"
+            autofocus
+            placeholder="✔ Next Memo"
+          ></textarea>
+          <div id="write-buttons-container">
+            <button id="write-button-add" class="write-buttons">
+              + Add Memo
+            </button>
+            <button id="write-button-edit" class="write-buttons" hidden="true">
+              <span class="material-icons"> check_circle </span>
+            </button>
+            <button
+              id="write-button-cancel"
+              class="write-buttons"
+              hidden="true"
+            >
+              <span class="material-icons"> block </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="section-read">
+        <div id="read-options">
+          <input
+            hidden="true"
+            type="search"
+            id="read-search-input"
+            placeholder="Pesquisar no noteous"
+          />
+          <p id="read-options-sort"></p>
+        </div>
+
+        <div class="read-panel">
+          <div id="read-notes-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p><span>notepost[Memo]</span> Rev1.0</p>
+    </footer>
+
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

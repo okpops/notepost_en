@@ -429,7 +429,7 @@ function renderNote() {
       document.createTextNode(
         `writing : ${new Date(note.id).getDate()}/${findMonth(
           new Date(note.id).getMonth()
-        )}/${new Date(note.id).getUTCFullYear()} 시간 ${setTimeNumber(
+        )}/${new Date(note.id).getUTCFullYear()} at ${setTimeNumber(
           new Date(note.id).getHours()
         )}:${setTimeNumber(new Date(note.id).getMinutes())}`
       )
@@ -440,7 +440,7 @@ function renderNote() {
         document.createTextNode(
           `Final : ${new Date(note.editedAt).getDate()}/${findMonth(
             new Date(note.editedAt).getMonth()
-          )}/${new Date(note.editedAt).getUTCFullYear()} 시간 ${setTimeNumber(
+          )}/${new Date(note.editedAt).getUTCFullYear()} at ${setTimeNumber(
             new Date(note.editedAt).getHours()
           )}:${setTimeNumber(new Date(note.editedAt).getMinutes())}`
         )
@@ -585,7 +585,7 @@ function deleteNote(noteId) {
 //função em variável para 'desbloquear' noteInput se tela é pequena
 let noteInputEdit = function (event) {
   noteInput.removeAttribute('readonly')
-  labelWrite.innerHTML = '📝 Modifying Memo'
+  labelWrite.innerHTML = '📝 Change Memo'
 }
 
 //ABRIR NOTA
@@ -610,7 +610,7 @@ function openNote(noteId) {
   } else if (window.screen.width >= 601) {
     noteInput.focus()
     noteButtonCancelEdit.removeAttribute('hidden')
-    labelWrite.innerHTML = '📝 Modifying Memo'
+    labelWrite.innerHTML = '📝 Change Memo'
     editNote(noteId)
   }
 }

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://notememo.netlify.app/sitemap.xml

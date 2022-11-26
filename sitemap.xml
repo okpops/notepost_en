@@ -8,17 +8,17 @@
 
 
 <url>
-  <loc>https://notememo.netlify.app/</loc>
+  <loc>http://notememo.netlify.app/</loc>
   <lastmod>2022-11-26T15:50:30+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://notememo.netlify.app/index.html</loc>
+  <loc>http://notememo.netlify.app/index.html</loc>
   <lastmod>2022-11-26T15:50:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://notememo.netlify.app/about.html</loc>
+  <loc>http://notememo.netlify.app/about.html</loc>
   <lastmod>2022-11-26T15:50:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>

@@ -2,21 +2,21 @@
 <rss version="2.0">
   <channel>
     <title>notepost[memo]</title>
-    <link>https://notememo.netlify.app/</link>
+    <link>http://notememo.netlify.app</link>
     <description>web post and memo</description>
     <item>
       <title>about</title>
-      <link>https://notememo.netlify.app/about.html</link>
+      <link>http://notememo.netlify.app/about.html</link>
       <description>about and update</description>
       <pubDate>11/15/2022</pubDate>
-      <guid>>https://notememo.netlify.app/about.html</guid>
+      <guid>>http://notememo.netlify.app/about.html</guid>
     </item>
     <item>
       <title>index</title>
-      <link>>https://notememo.netlify.app/index.html</link>
+      <link>>http://notememo.netlify.app/index.html</link>
       <description>main web memo</description>
       <pubDate>11/15/2022</pubDate>
-      <guid>https://notememo.netlify.app/index.html</guid>
+      <guid>http://notememo.netlify.app/index.html</guid>
     </item>
   </channel>
 </rss>
